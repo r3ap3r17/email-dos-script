@@ -5,6 +5,7 @@
  |_||___/\__,_| .__/___/_| |_|/_/  
               |_|                  
 
+
 This script will dos someones email !
 Script needs to be edited in order to work.
 You can provide a mesage in a text file.
