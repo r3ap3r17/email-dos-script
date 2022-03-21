@@ -5,7 +5,7 @@ You can provide a mesage in a text file.
 Encode your email and password with encoder.py in case someone looks at this script.
 
 # ENCODER USAGE:
-encoder.py - python3 encoder.py [encoding type] [string]
+python3 encoder.py [encoding type] [string]
 
 # EMAIL-DOS USAGE:
 You need to install some python libs for this script to work:
