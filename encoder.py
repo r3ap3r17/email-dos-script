@@ -3,7 +3,7 @@ import base64
 import pyperclip
 from hashlib import blake2b
 
-#blake2b da dodam
+
 encoders = ('base64', 'blake2b')
 
 def encode_str(enc):
