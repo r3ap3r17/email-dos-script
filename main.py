@@ -60,7 +60,6 @@ banner = '''
 
 '''
 
-#print(MyAcc.decoded_pass()) #Your password
 print(banner)
 MyAcc = EmailAccount(EMAIL, PASSWORD)
 MyAcc.threader(LEVEL)
