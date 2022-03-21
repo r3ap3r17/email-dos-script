@@ -6,7 +6,7 @@ import base64
 import threading
 
 EMAIL = 'sender@email.com'         # Your email
-PASSWORD = b'password'             # Encoded password ( You can encode it with encoder.py)
+PASSWORD = b'password'             # Base64 encoded password ( You can encode it with encoder.py)
 MESSAGE = 'file.txt'               # File cotaining a message text
 RECEIVER = 'reciever@email.com'    # Where you want to send your message
 LEVEL = 500                        # Specify how many emails you want
@@ -15,12 +15,7 @@ class EmailAccount:
     def __init__(self, email, password):
         self.email = email
         self.password = password
-
-    #It returns a text from a given file
-    def read_file(self, file):
-        with open(file, 'r') as f:
-            return f.read()
-    
+        
     #It decodes bs64 and returns it as a string
     def decoded_pass(self):
         return base64.b64decode(self.password, altchars=None).decode('utf-8')
@@ -40,7 +35,7 @@ class EmailAccount:
             context = ssl.create_default_context()
             with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
                 server.ehlo()
-                server.login(self.email, 'Bokijedesupu123')
+                server.login(self.email, MyAcc.decoded_pass())
                 server.sendmail(self.email, reciever, msg.as_string())
                 server.quit()
                 print('Message sent successfully !')
