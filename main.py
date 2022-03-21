@@ -25,7 +25,7 @@ class EmailAccount:
         #reciever is a person ^ who recieves a email
         msg = MIMEMultipart()
         msg['From'] = 'PythonDevVB'
-        msg['To'] = 'veljkonela21@gmail.com'
+        msg['To'] = RECEIVER
         msg['subject'] = 'Just a test !'
         with open(file, 'r') as f:
             message = f.read()
