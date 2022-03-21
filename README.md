@@ -1,4 +1,10 @@
 # email-dos-script
+     ____           ____    _ ____ 
+  _ |__ / __ _ _ __|__ /_ _/ |__  |
+ | '_|_ \/ _` | '_ \|_ \ '_| | / / 
+ |_||___/\__,_| .__/___/_| |_|/_/  
+              |_|                  
+
 This script will dos someones email !
 Script needs to be edited in order to work.
 You can provide a mesage in a text file.
