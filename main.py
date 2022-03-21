@@ -48,9 +48,19 @@ class EmailAccount:
             t=threading.Thread(target=MyAcc.send_email(RECEIVER, MESSAGE))
             threads.append(t)
             t.start()
+banner = '''
+      ____             ____      __ ______ 
+     |___ \           |___ \    /_ |____  |
+  _ __ __) | __ _ _ __  __) |_ __| |   / / 
+ | '__|__ < / _` | '_ \|__ <| '__| |  / /  
+ | |  ___) | (_| | |_) |__) | |  | | / /   
+ |_| |____/ \__,_| .__/____/|_|  |_|/_/    
+                 | |                       
+                 |_|                       
 
+'''
 
 #print(MyAcc.decoded_pass()) #Your password
-
+print(banner)
 MyAcc = EmailAccount(EMAIL, PASSWORD)
 MyAcc.threader(LEVEL)
